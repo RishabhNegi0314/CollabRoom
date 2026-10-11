@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Collaborative Code Workspace",
+  "description": "A high-fidelity real-time collaborative coding workspace featuring a multi-file editor, live voice channels, version control visualizer, AI debugging and reviews, Kanban task tracking, and canvas mockup builder.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

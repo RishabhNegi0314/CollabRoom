@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="dark" style="background-color: #050505; color: #e4e4e7;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remix: Collaborative Code Workspace</title>
+    <meta name="description" content="A high-fidelity real-time collaborative coding workspace featuring a multi-file editor, live voice channels, version control visualizer, AI debugging and reviews, Kanban task tracking, and canvas mockup builder." />
+    <meta property="og:title" content="Remix: Collaborative Code Workspace" />
+    <meta property="og:description" content="A high-fidelity real-time collaborative coding workspace featuring a multi-file editor, live voice channels, version control visualizer, AI debugging and reviews, Kanban task tracking, and canvas mockup builder." />
+    <meta property="og:image" content="/src/assets/images/app_thumbnail_1790678229448.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Remix: Collaborative Code Workspace" />
+    <meta name="twitter:description" content="A high-fidelity real-time collaborative coding workspace featuring a multi-file editor, live voice channels, version control visualizer, AI debugging and reviews, Kanban task tracking, and canvas mockup builder." />
+    <meta name="twitter:image" content="/src/assets/images/app_thumbnail_1790678229448.jpg" />
+    <link rel="image_src" href="/src/assets/images/app_thumbnail_1790678229448.jpg" />
+    <style>
+      html, body {
+        background-color: #050505;
+        color: #e4e4e7;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      @keyframes appSpinner {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body class="bg-[#050505] text-zinc-100 min-h-screen">
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #050505; color: #a1a1aa;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+          <div style="width: 44px; height: 44px; border: 3px solid rgba(99, 102, 241, 0.2); border-top-color: #6366F1; border-radius: 50%; animation: appSpinner 0.8s linear infinite;"></div>
+          <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #d4d4d8; font-family: monospace;">Loading Collab Workspace...</div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

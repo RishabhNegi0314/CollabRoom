@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "CollabState": {
+      "title": "CollabState",
+      "description": "The entire collaborative editor workspace state.",
+      "type": "object",
+      "properties": {
+        "files": {
+          "type": "array",
+          "description": "List of active files"
+        },
+        "users": {
+          "type": "array",
+          "description": "List of active users"
+        },
+        "git": {
+          "type": "object",
+          "description": "Git state"
+        },
+        "tasks": {
+          "type": "array",
+          "description": "Kanban tasks"
+        },
+        "canvasElements": {
+          "type": "array",
+          "description": "Canvas elements"
+        }
+      },
+      "required": ["files", "users", "git", "tasks", "canvasElements"]
+    }
+  },
+  "firestore": {
+    "workspaces/{workspaceId}": {
+      "schema": "CollabState",
+      "description": "Storage for workspace session states"
+    }
+  }
+}
